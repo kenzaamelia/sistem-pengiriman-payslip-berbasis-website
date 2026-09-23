@@ -63,17 +63,12 @@ export default function AuthenticatedLayout({ header, children }) {
     const [mobileOpen, setMobileOpen] = useState(false);
 
     return (
-        <div className="min-h-screen bg-[#F6F8F7] text-[#14202B] font-['Figtree',sans-serif] lg:flex">
+        <div className="min-h-screen bg-[#F6F8F7] text-[#14202B] font-sans lg:flex">
             {/* Top bar khusus mobile */}
             <div className="flex items-center justify-between border-b border-black/10 bg-[#1B354B] px-4 py-3 text-white lg:hidden">
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#2E7D52] font-bold text-white">
-                        S
-                    </div>
-                    <span className="font-bold tracking-tight">
-                        <span className="text-white">Slip</span>
-                        <span className="text-emerald-400">Gaji</span>
-                    </span>
+                {/* GANTI MENJADI: */}
+                <Link href="/">
+                    <ApplicationLogo light />
                 </Link>
 
                 <button
@@ -99,12 +94,10 @@ export default function AuthenticatedLayout({ header, children }) {
             {/* Sidebar Desktop */}
             <aside className="hidden lg:sticky lg:top-0 lg:flex lg:h-screen lg:w-64 lg:shrink-0 lg:flex-col lg:bg-gradient-to-b lg:from-[#1B354B] lg:via-[#244663] lg:to-[#1F3E59] shadow-md">
                 {/* Logo Section */}
-                <div className="flex h-16 shrink-0 items-center gap-2.5 border-b border-white/10 px-6">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-500 to-[#2E7D52] font-bold text-white shadow-sm">
-                        SG
-                    </div>
-                    <Link href="/" className="text-xl font-bold tracking-tight text-white">
-                        Slip<span className="text-emerald-400">Gaji</span>
+                {/* GANTI MENJADI: */}
+                <div className="flex h-16 shrink-0 items-center border-b border-white/10 px-6">
+                    <Link href="/" className="transition-opacity hover:opacity-90">
+                        <ApplicationLogo light />
                     </Link>
                 </div>
 

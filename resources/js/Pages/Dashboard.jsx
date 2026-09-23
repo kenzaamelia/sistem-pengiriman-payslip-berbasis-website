@@ -24,7 +24,7 @@ export default function Dashboard() {
                 {/* Banner Selamat Datang */}
                 <div className="relative overflow-hidden rounded-2xl border border-slate-200/80 bg-gradient-to-br from-[#1B354B] via-[#244663] to-[#2C5578] p-6 text-white shadow-sm sm:p-8">
                     <div className="relative z-10">
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-medium text-emerald-300">
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/20 px-3 py-1 text-sm font-medium text-emerald-300">
                             <span className="h-1.5 w-1.5 rounded-full bg-emerald-400" />
                             Sistem Siap Digunakan
                         </span>
